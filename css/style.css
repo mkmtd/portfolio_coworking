@@ -1,0 +1,256 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 2.5vh;
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+  line-height: 1.5;
+}
+
+* ul {
+  list-style: none;
+}
+
+* a {
+  color: black;
+  text-decoration: none;
+}
+
+.firstview {
+  height: 100vh;
+  width: 100vw;
+  background-color: red;
+  text-align: center;
+}
+
+.firstview .firstview_illust {
+  height: 50vh;
+  width: 90%;
+  margin: 30vh 5% 20vh 5%;
+}
+
+.firstview .sp,
+.firstview .pc {
+  position: absolute;
+  left: 5%;
+  width: 90%;
+  color: white;
+  font-family: "Big Shoulders Stencil Text", cursive;
+  font-size: 8.75vh;
+}
+
+@media (max-width: 639px) {
+  .firstview .sp {
+    top: 12.5vh;
+  }
+  .firstview .pc {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .firstview .sp {
+    display: none;
+  }
+  .firstview .pc {
+    top: 10vh;
+    font-size: 12.5vh;
+    letter-spacing: 0.25rem;
+  }
+}
+
+.hamburger nav ul {
+  position: fixed;
+  top: -150vh;
+  right: -150vh;
+  height: 150vh;
+  width: 150vh;
+  padding-left: calc(150vh - 100vw);
+  padding-top: 15vh;
+  padding-bottom: 65vh;
+  border-radius: 0 0 0 100%;
+  background: white;
+  text-align: center;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.hamburger nav ul li {
+  width: 100%;
+  margin: calc((70vh - 10rem) / 8) 0;
+}
+
+.hamburger nav ul li a {
+  font-size: 2.5rem;
+}
+
+.hamburger .hamburger_btn {
+  cursor: pointer;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 10vh;
+  width: 10vh;
+}
+
+.hamburger .hamburger_btn div {
+  position: fixed;
+  right: 2.5vh;
+  height: 5px;
+  width: 7.5vh;
+  background: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburger .hamburger_btn :nth-of-type(1) {
+  top: 3.75vh;
+}
+
+.hamburger .hamburger_btn :nth-of-type(2) {
+  top: 6.25vh;
+}
+
+@media (min-width: 640px) {
+  .hamburger nav ul {
+    top: -150%;
+    right: -150%;
+    height: 150%;
+    width: 150%;
+    padding-left: 50%;
+  }
+}
+
+.hamburger nav.active ul {
+  top: 0;
+  right: 0;
+}
+
+.hamburger .hamburger_btn.active div {
+  background: red;
+}
+
+.hamburger .hamburger_btn.active :nth-of-type(1) {
+  -webkit-transform: translateY(1.25vh);
+          transform: translateY(1.25vh);
+}
+
+.hamburger .hamburger_btn.active :nth-of-type(2) {
+  -webkit-transform: translateY(-1.25vh);
+          transform: translateY(-1.25vh);
+}
+
+.svg_01 img {
+  margin-top: -1rem;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main section {
+  margin: 5rem auto;
+}
+
+main section h2 {
+  font-size: 5vh;
+  margin: 1rem 0;
+}
+
+main section p {
+  line-height: 2;
+}
+
+#price ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#price ul .plan {
+  margin: 5vh 0;
+}
+
+#price ul .plan .plan_img {
+  height: 25vh;
+  margin: 2.5vh 0;
+}
+
+#price ul .plan .plan_img img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 640px) {
+  #price ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #price ul .plan {
+    width: 30%;
+    margin: 5vh 2.5%;
+  }
+}
+
+#q_a dl {
+  margin: 2.5vh 0;
+  text-align: left;
+}
+
+#q_a dl dt,
+#q_a dl dd {
+  line-height: 2;
+}
+
+#q_a dl dt {
+  cursor: pointer;
+}
+
+#q_a dl dt.active {
+  font-weight: bolder;
+}
+
+#q_a dl dd {
+  display: none;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  -webkit-animation: flipInX;
+          animation: flipInX;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+#q_a dl dd.active {
+  display: block;
+}
+
+#access .googlemap {
+  height: 55vh;
+}
+
+#access .googlemap iframe {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.svg_02 img {
+  margin-bottom: -1rem;
+}
+
+footer {
+  position: relative;
+  background: red;
+  text-align: center;
+}
+
+footer p {
+  padding: 2.5vh 0;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
