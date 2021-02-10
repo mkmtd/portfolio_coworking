@@ -13,9 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   //Q&Aドロップダウン（仮コード）
-  document.getElementsByClassName("question").addEventListener("click", function () {
+  document.getElementById("question01").addEventListener("click", function () {
     this.classList.toggle("active");
-    document.getElementsByClassName("answer").classList.toggle("active");
+    document.getElementById("answer_01").classList.toggle("active");
+  });
+  
+  document.getElementById("question02").addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.getElementById("answer_02").classList.toggle("active");
+  });
+  
+  document.getElementById("question03").addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.getElementById("answer_03").classList.toggle("active");
   });
 
 });
